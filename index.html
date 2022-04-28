@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta lang="ru" lang charset="UTF-8">
+        <title>Рандомизатор</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <script src="functions.js"></script>
+    </head>
+    <body>
+        <div class="description-block">
+            <h1><span class="color-change">Рандомизатор</span> для
+                всего на свете!</h1>
+            <h3>Не знаете, что посмотреть вечером? Куда сходить с друзьями? Как назвать нового питомца? Не волнуйтесь, ведь теперь у вас есть рандомизатор для всего на свете - просто впишите ваши варианты и доверьтесь случаю!</h3>
+        </div>
+        <div class="input-block">
+            <form id="vars" name="vars" onsubmit="choose(this); event.preventDefault();">
+                <fieldset name="variantInputs">
+                    <div class="non-deletable-text-input">
+                        <input type="text">
+                    </div>
+                    <div class="non-deletable-text-input">
+                        <input type="text">
+                    </div>
+                </fieldset>
+                <input type="button" id="addVariantButton" onclick="addVariant(); event.preventDefault();" value="Добавить вариант">
+                <input type="submit" value="Выбрать!">
+            </form>
+        </div>
+        <div id="loader" class="loader">
+            <span id="typed-text">Выбираем...</span>
+            <div class="loader-image"></div>
+        </div>
+        <div id="result-block" class="result-block">
+            <h2>Результат:</h2>
+            <span id="result">выбранный вариант</span>
+        </div>
+    </body>
+</html>
