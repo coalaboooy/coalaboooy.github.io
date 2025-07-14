@@ -13,9 +13,14 @@ body {
     gap: 20px;
 }
 
-[class="block"] {
+.block {
     width: 100%;
-    font-size: xxx-large;
+    font-size: xx-large;
+}
+
+.blockl {
+    width: 100%;
+    font-size: x-large;
 }
 
 .description-block {
