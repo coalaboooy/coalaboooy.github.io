@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url(res/background.png);
+    /* background-image: url(res/background.png); */
     background-size: contain;
     background-attachment: fixed;
     display: flex;
@@ -15,6 +15,7 @@ body {
 
 [class$="-block"] {
     width: 100%;
+    font-size: x-large;
 }
 
 .description-block {
