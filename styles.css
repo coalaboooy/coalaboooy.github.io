@@ -14,15 +14,23 @@ body {
 }
 
 .block {
-    display: contents;
     width: 100%;
     font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 }
 
 .blockl {
-    display: contents;
     width: 100%;
     font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 }
 
 .description-block {
