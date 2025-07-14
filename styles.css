@@ -14,22 +14,14 @@ body {
 }
 
 .block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: contents;
     width: 100%;
-    gap: 20px;
     font-size: xx-large;
 }
 
 .blockl {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: contents;
     width: 100%;
-    gap: 20px;
     font-size: x-large;
 }
 
