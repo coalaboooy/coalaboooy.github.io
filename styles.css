@@ -15,11 +15,13 @@ body {
 
 .block {
     width: 100%;
+    align-items: center;
     font-size: xx-large;
 }
 
 .blockl {
     width: 100%;
+    align-items: center;
     font-size: x-large;
 }
 
