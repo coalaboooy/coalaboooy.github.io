@@ -3,37 +3,41 @@
 <html>
     <head>
         <meta lang="ru" lang charset="UTF-8">
-        <title>Рандомизатор</title>
+        <title>Incursion: Red River Release Timer</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
-        <script src="functions.js"></script>
+        <!-- <script src="functions.js"></script> -->
     </head>
     <body>
-        <div class="description-block">
-            <h1><span class="color-change">Рандомизатор</span> для
-                всего на свете!</h1>
-            <h3>Не знаете, что посмотреть вечером? Куда сходить с друзьями? Как назвать нового питомца? Не волнуйтесь, ведь теперь у вас есть рандомизатор для всего на свете - просто впишите ваши варианты и доверьтесь случаю!</h3>
-        </div>
-        <div class="input-block">
-            <form id="vars" name="vars" onsubmit="choose(this); event.preventDefault();">
-                <fieldset name="variantInputs">
-                    <div class="non-deletable-text-input">
-                        <input type="text">
-                    </div>
-                    <div class="non-deletable-text-input">
-                        <input type="text">
-                    </div>
-                </fieldset>
-                <input type="button" id="addVariantButton" onclick="addVariant(); event.preventDefault();" value="Добавить вариант">
-                <input type="submit" value="Выбрать!">
-            </form>
-        </div>
-        <div id="loader" class="loader">
-            <span id="typed-text">Выбираем...</span>
-            <div class="loader-image"></div>
-        </div>
-        <div id="result-block" class="result-block">
-            <h2>Результат:</h2>
-            <span id="result">выбранный вариант</span>
-        </div>
+        <p id="demo"></p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 14, 2028 18:06:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
     </body>
 </html>
