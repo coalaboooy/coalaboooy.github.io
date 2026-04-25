@@ -58,7 +58,6 @@ body {
     background-color: #F7CA0B;
     border: outset;
     border-color: #E545B2;
-    border-radius: 8px;
     color: white;
     text-shadow: 1px 1px 2px black;
     text-align: center;
@@ -68,6 +67,5 @@ body {
 }
 
 .start-button:hover {
-    background-color: #917807;
-    border: inset;
+    background-color: #DBB10A;
 }
