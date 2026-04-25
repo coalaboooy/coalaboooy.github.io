@@ -50,7 +50,5 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.1rem;
     font-weight: bold;
-    outline-offset: 1px;
-    outline-width: 1px;
-    outline-color: red;
+    text-shadow: 0px 0px 3px red;
 }
