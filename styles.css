@@ -2,13 +2,12 @@ body {
     background-image: url(https://umamusu.wiki/w/images/f/fd/Bg_0044_00000.png);
     background-attachment: fixed;
     background-size: contain;
+    display: flex;
+    justify-content: center;
 }
 
 .center-div {
-    display: flex;
-    align-items: center;
-    color: white;
-    opacity: 0.8;
+    background-color: rgba(1, 1, 1, 0.8);
     height: 100vh;
     width: 70vw;
 }
