@@ -23,3 +23,16 @@ body {
     align-items: center;
     height: fit-content;
 }
+
+.text-block {
+    margin: 0.5rem;
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+    height: fit-content;
+}
+
+.font {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
