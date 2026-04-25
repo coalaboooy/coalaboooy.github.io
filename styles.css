@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://umamusu.wiki/w/images/f/fd/Bg_0044_00000.png);
+    background-image: url("data/images/background.png");
     background-attachment: fixed;
     background-size: cover;
     display: flex;
@@ -19,7 +19,9 @@ body {
     width: 70vw;
 }
 
-.title {
+.title-image {
+    background-image: url("data/images/title.png");
+    background-size: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: inherit;
