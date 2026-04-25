@@ -33,6 +33,7 @@ body {
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
+    flex-direction: column;
     height: fit-content;
 }
 
