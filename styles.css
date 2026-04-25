@@ -21,4 +21,5 @@ body {
     display: inherit;
     justify-content: inherit;
     align-items: center;
+    height: fit-content;
 }
