@@ -22,7 +22,4 @@ body {
     justify-content: inherit;
     align-items: center;
     height: fit-content;
-    border-color: brown;
-    border-width: 15px;
-    border-style: solid;
 }
