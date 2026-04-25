@@ -28,6 +28,14 @@ body {
     height: fit-content;
 }
 
+.main-content {
+    margin: 0;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: fit-content;
+}
+
 .text-block {
     margin: 0.5rem;
     display: inherit;
