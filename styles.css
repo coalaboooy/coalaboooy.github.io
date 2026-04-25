@@ -1,4 +1,5 @@
 body {
     background-image: url(data/images/background.png);
-    background-repeat: space;
+    background-repeat: repeat;
+    
 }
