@@ -33,6 +33,7 @@ body {
     justify-content: inherit;
     align-items: center;
     height: fit-content;
+    flex-direction: column;
 }
 
 .font-big {
@@ -51,4 +52,13 @@ body {
     font-size: 1.1rem;
     font-weight: bold;
     text-shadow: 0px 0px 3px red;
+}
+
+.start-button {
+    background-color: #F7CA0B;
+    border: thick;
+    border-color: #E545B2;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
 }
