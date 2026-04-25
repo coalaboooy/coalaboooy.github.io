@@ -56,9 +56,18 @@ body {
 
 .start-button {
     background-color: #F7CA0B;
-    border: thick;
+    border: outset;
     border-color: #E545B2;
+    border-radius: 8px;
     color: white;
+    text-shadow: 1px 1px 2px black;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.start-button:hover {
+    background-color: #917807;
+    border: inset;
 }
