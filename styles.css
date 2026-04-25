@@ -3,3 +3,12 @@ body {
     background-attachment: fixed;
     background-size: contain;
 }
+
+.center-div {
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 0.8;
+    height: 100vh;
+    width: 70vw;
+}
