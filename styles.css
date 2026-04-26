@@ -38,9 +38,20 @@ body {
 }
 
 .quiz-content {
-    margin: inherit;
-    display: inherit;
-    height: fit-content;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.quiz-question-number {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.quiz-header-text {
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 .text-block {
