@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const questionCounterText = document.createTextNode("Question 67/80")
         questionCounterText.className = textBlockClass + " " + fontBigClass
         questionNode.appendChild(questionCounterText)
-        mainContentNode.innerHTML = questionNode
+        mainContentNode.innerHTML = ""
+        mainContentNode.innerHTML.appendChild(questionNode)
     });
 });
