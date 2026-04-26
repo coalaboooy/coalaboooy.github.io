@@ -8,8 +8,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     startQuizButton.addEventListener("click", function() {
         const questionNode = document.createElement("div")
         questionNode.className = "quiz-content"
-        const questionCounterText = document.createTextNode("Question 67/80")
+        const questionCounterText = document.createElement("p")
         questionCounterText.className = textBlockClass + " " + fontBigClass
+        questionCounterText.textContent = "Question 67/80"
         questionNode.appendChild(questionCounterText)
         mainContentNode.innerHTML = ""
         mainContentNode.appendChild(questionNode)
