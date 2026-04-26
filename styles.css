@@ -45,13 +45,14 @@ body {
 }
 
 .quiz-question-number {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: span 2;
+    text-align: center;
 }
 
 .quiz-header-text {
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    text-align: center;
 }
 
 .text-block {

@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const questionLeftHeader = document.createElement("p")
         questionLeftHeader.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderText
         questionLeftHeader.textContent = "Listen to the music"
+        questionNode.appendChild(questionLeftHeader)
         const questionRightHeader = document.createElement("p")
         questionRightHeader.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderText
         questionRightHeader.textContent = "Guess the character"
+        questionNode.appendChild(questionRightHeader)
 
         mainContentNode.innerHTML = ""
         mainContentNode.appendChild(questionNode)
-        mainContentNode.appendChild(questionLeftHeader)
-        mainContentNode.appendChild(questionRightHeader)
     });
 });
