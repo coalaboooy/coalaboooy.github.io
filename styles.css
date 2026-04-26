@@ -37,6 +37,12 @@ body {
     height: fit-content;
 }
 
+.quiz-content {
+    margin: inherit;
+    display: inherit;
+    height: fit-content;
+}
+
 .text-block {
     margin: 0.5rem;
     display: inherit;
