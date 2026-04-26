@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         questionCounterText.className = textBlockClass + " " + fontBigClass
         questionNode.appendChild(questionCounterText)
         mainContentNode.innerHTML = ""
-        mainContentNode.innerHTML.appendChild(questionNode)
+        mainContentNode.appendChild(questionNode)
     });
 });
