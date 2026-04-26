@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-    alert("Content loaded!")
+    const mainContentNode = document.getElementById("mainContentNode");
     const startQuizButton = document.getElementById("startQuizButton");
     startQuizButton.addEventListener("click", function() {
-        alert("Button clicked!");
+        mainContentNode.textContent = ""
     });
 });
