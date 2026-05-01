@@ -38,16 +38,21 @@ const audioDir = "data/audio/"
 const characterImageDir = "data/images/characters/"
 const albumCoverImageDir = "data/images/album_covers/"
 
+const audioNum = length(audioArr)
+var count = 1
+
 document.addEventListener("DOMContentLoaded", (event) => {
     const mainContentNode = document.getElementById("mainContentNode")
     const startQuizButton = document.getElementById("startQuizButton")
+    const umaNumP = document.getElementById("umaNum")
+    umaNumP.textContent = `There are currently ${audioNum} umamusume characters featured`
         
     startQuizButton.addEventListener("click", function() {
         const questionNode = document.createElement("div")
         questionNode.className = "quiz-content"
         const questionCounterText = document.createElement("p")
         questionCounterText.className = textBlockClass + " " + fontBigClass + " " + quizQuestionNumberClass
-        questionCounterText.textContent = "Question 67/80"
+        questionCounterText.textContent = `Question ${count}/${audioNum}`
         questionNode.appendChild(questionCounterText)
         const questionLeftHeader = document.createElement("p")
         questionLeftHeader.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
@@ -73,7 +78,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         audioPlayer.volume = 0.5
         audioBox.appendChild(audioPlayer)
         const audioSource = document.createElement("source")
-        audioSource.src = audioDir + audioArr[0].audio
+        audioSource.src = audioDir + audioArr[count-1].audio
         audioPlayer.appendChild(audioSource)
         const imageBox = document.createElement("div")
         imageBox.className = textBlockClass + " quiz-image-box"
@@ -85,6 +90,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
         submitButton.id = "submitQuizAnswer"
         submitButton.className = buttonClass
         submitButton.textContent = "Submit"
+
+        submitButton.addEventListener("click", function() {
+            var audioName = audioArr[count-1].name
+            var answer = $('#umaName').select2('data');
+            const answerName = answer.text
+            console.log(audioName)
+            console.log(answerName)
+            console.log(audioName === answerName)
+        });
+
         buttonBox.appendChild(submitButton)
 
         mainContentNode.innerHTML = ""
