@@ -3,8 +3,10 @@
     <head>
         <meta lang="en" lang charset="UTF-8">
         <title>Umamusume song quiz</title>
-        <link href="styles.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/x-icon" href="data/images/favicon.png">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
         <script src="functions.js"></script>
     </head>
     <body>
@@ -28,12 +30,11 @@
                     </p>
                 </div>
                 <div class="text-block">
-                    <input list="names">
-                    <datalist id="names">
-                        <option value="Maruzensky">
-                        <option value="Meisho Doto">
-                        <option value="Narita Brian">
-                    </datalist>
+                    <select class="js-example-basic-single" name="name">
+                        <option value="Maruzensky">Maruzensky</option>
+                        <option value="Meisho Doto">Meisho Doto</option>
+                        <option value="Mayano Top Gun">Mayano Top Gun</option>
+                    </select>
                 </div>
                 <div class="text-block">
                     <button id="startQuizButton" class="start-button">Start quiz!</button>
