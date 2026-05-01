@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     $('#umaName').select2({
         placeholder: '',
         data: ["", "Maruzensky", "Nice Nature", "Biwa Hayahide"],
-        width: 'fit-content',
+        width: 'element',
         dropdownAutoWidth: true
     });
     const mainContentNode = document.getElementById("mainContentNode");
