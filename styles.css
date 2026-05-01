@@ -58,7 +58,15 @@ body {
 .quiz-name-selector {
     grid-column: 2;
     grid-row: 3;
+    justify-items: center;
 }
+
+.quiz-audio-player {
+    grid-column: 1;
+    grid-row: 3;
+    justify-items: center;
+}
+
 
 .text-block {
     margin: 0.5rem;

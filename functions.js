@@ -30,6 +30,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
         nameSelector.name = "umaName"
         nameSelectorBox.appendChild(nameSelector)
 
+        const audioBox = document.createElement("div")
+        audioBox.className = textBlockClass + " quiz-audio-player"
+        questionNode.appendChild(audioBox)
+        const audioPlayer = document.createElement("audio")
+        audioPlayer.id = "songPlayer"
+        audioPlayer.controls = true
+        audioBox.appendChild(audioPlayer)
+        var audioSource = document.createElement("source");
+        audioSource.src="Sutekimeppou end note.mp3"
+        audioPlayer.appendChild(audioSource)
+        
+
         mainContentNode.innerHTML = ""
         mainContentNode.appendChild(questionNode)
 
