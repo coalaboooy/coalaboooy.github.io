@@ -9,6 +9,10 @@ body {
     margin-bottom: 0px;
 }
 
+select {
+    width: fit-content;
+}
+
 .background-center {
     display: inherit;
     justify-content: flex-start;
