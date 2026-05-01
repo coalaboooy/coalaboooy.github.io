@@ -75,6 +75,8 @@ audio {
 .quiz-image-box {
     grid-column: 2;
     grid-row: 4;
+    width: 256px;
+    height: 256px;
     justify-items: center;
     align-self: center;
 }

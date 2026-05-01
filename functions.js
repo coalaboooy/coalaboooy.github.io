@@ -1,8 +1,20 @@
+function getImageByCharacterName(arr, name) {
+  return arr.find(character => {
+    return character.name === name;
+  })?.image || 'no_photo.png';
+}
+
+var data = JSON.parse(fs.readFileSync("data/json/characters.json"));
+
 const textBlockClass = "text-block"
 const fontBigClass = "font-big"
 const fontNormalClass = "font-normal"
-const quizQuestionNumber = "quiz-question-number"
-const quizHeaderText = "quiz-header-text"
+const quizQuestionNumberClass = "quiz-question-number"
+const quizHeaderTextClass = "quiz-header-text"
+
+const audioDir = "data/audio/"
+const characterImageDir = "data/images/characters/"
+const albumCoverImageDir = "data/images/album_covers/"
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const mainContentNode = document.getElementById("mainContentNode");
@@ -11,15 +23,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const questionNode = document.createElement("div")
         questionNode.className = "quiz-content"
         const questionCounterText = document.createElement("p")
-        questionCounterText.className = textBlockClass + " " + fontBigClass + " " + quizQuestionNumber
+        questionCounterText.className = textBlockClass + " " + fontBigClass + " " + quizQuestionNumberClass
         questionCounterText.textContent = "Question 67/80"
         questionNode.appendChild(questionCounterText)
         const questionLeftHeader = document.createElement("p")
-        questionLeftHeader.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderText
+        questionLeftHeader.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
         questionLeftHeader.textContent = "Listen to the music"
         questionNode.appendChild(questionLeftHeader)
         const questionRightHeader = document.createElement("p")
-        questionRightHeader.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderText
+        questionRightHeader.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
         questionRightHeader.textContent = "Guess the character"
         questionNode.appendChild(questionRightHeader)
         const nameSelectorBox = document.createElement("div")
@@ -42,9 +54,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const imageBox = document.createElement("div")
         imageBox.className = textBlockClass + " quiz-image-box"
         questionNode.appendChild(imageBox)
-        const img = new Image(256, 256);
-        img.src = "data/images/chara_stand_1060_106001.png"
-        imageBox.appendChild(img)
+        
 
         mainContentNode.innerHTML = ""
         mainContentNode.appendChild(questionNode)
@@ -57,8 +67,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
 
         $('#umaName').on('select2:select', function (e) {
-            var data = e.params.data;
-            console.log(data);
+            var name = e.params.data.text;
+            imageBox.innerHTML = ""
+            const img = new Image(256, 256);
+            img.src = "characterImageDir" + getImageByCharacterName(data, name)
+            imageBox.appendChild(img)
         });
     });
 });
