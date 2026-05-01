@@ -5,7 +5,7 @@ const quizQuestionNumber = "quiz-question-number"
 const quizHeaderText = "quiz-header-text"
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    $('.js-example-basic-single').select2();
+    $('#umaName').select2();
     const mainContentNode = document.getElementById("mainContentNode");
     const startQuizButton = document.getElementById("startQuizButton");
     startQuizButton.addEventListener("click", function() {
