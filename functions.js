@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         nameSelector.id = "umaName"
         nameSelector.name = "umaName"
         nameSelectorBox.appendChild(nameSelector)
-
         const audioBox = document.createElement("div")
         audioBox.className = textBlockClass + " quiz-audio-player"
         questionNode.appendChild(audioBox)
@@ -37,10 +36,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
         audioPlayer.id = "songPlayer"
         audioPlayer.controls = true
         audioBox.appendChild(audioPlayer)
-        var audioSource = document.createElement("source");
+        const audioSource = document.createElement("source");
         audioSource.src="data/audio/Sutekimeppou end note.mp3"
         audioPlayer.appendChild(audioSource)
-        
+        const imageBox = document.createElement("div")
+        imageBox.className = textBlockClass + " quiz-image-box"
+        questionNode.appendChild(imageBox)
+        const img = new Image(256, 256);
+        img.src = "data/images/chara_stand_1060_106001.png"
+        imageBox.appendChild(img)
 
         mainContentNode.innerHTML = ""
         mainContentNode.appendChild(questionNode)

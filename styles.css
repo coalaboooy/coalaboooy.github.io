@@ -9,6 +9,10 @@ body {
     margin-bottom: 0px;
 }
 
+audio {
+    max-height: 3rem;
+}
+
 .background-center {
     display: inherit;
     justify-content: flex-start;
@@ -59,6 +63,7 @@ body {
     grid-column: 2;
     grid-row: 3;
     justify-items: center;
+    align-self: center;
 }
 
 .quiz-audio-player {
@@ -67,6 +72,12 @@ body {
     justify-items: center;
 }
 
+.quiz-image-box {
+    grid-column: 2;
+    grid-row: 4;
+    justify-items: center;
+    align-self: center;
+}
 
 .text-block {
     margin: 0.5rem;
