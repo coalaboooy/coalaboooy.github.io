@@ -38,7 +38,7 @@ const audioDir = "data/audio/"
 const characterImageDir = "data/images/characters/"
 const albumCoverImageDir = "data/images/album_covers/"
 
-const audioNum = length(audioArr)
+const audioNum = audioArr.length
 var count = 1
 
 document.addEventListener("DOMContentLoaded", (event) => {
