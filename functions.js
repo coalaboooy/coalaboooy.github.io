@@ -7,7 +7,8 @@ const quizHeaderText = "quiz-header-text"
 document.addEventListener("DOMContentLoaded", (event) => {
     $('#umaName').select2({
         placeholder: "",
-        data: ["Maruzensky", "Nice Nature", "Biwa Hayahide"]
+        data: ["Maruzensky", "Nice Nature", "Biwa Hayahide"],
+        width: "resolve"
     });
     const mainContentNode = document.getElementById("mainContentNode");
     const startQuizButton = document.getElementById("startQuizButton");
