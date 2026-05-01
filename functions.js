@@ -1,6 +1,7 @@
+var characters = null
 fetch("data/json/characters.json")
 .then(res => res.json())
-.then(data => console.log(data))
+.then(data => characters = data)
 
 function getImageByCharacterName(arr, name) {
   return arr.find(character => {
@@ -8,7 +9,6 @@ function getImageByCharacterName(arr, name) {
   })?.image || 'no_photo.png';
 }
 
-var data = JSON.parse(fs.readFileSync("data/json/characters.json"));
 
 const textBlockClass = "text-block"
 const fontBigClass = "font-big"
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             var name = e.params.data.text;
             imageBox.innerHTML = ""
             const img = new Image(256, 256);
-            img.src = "characterImageDir" + getImageByCharacterName(data, name)
+            img.src = "characterImageDir" + getImageByCharacterName(characters, name)
             imageBox.appendChild(img)
         });
     });
