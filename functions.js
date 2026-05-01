@@ -5,7 +5,10 @@ const quizQuestionNumber = "quiz-question-number"
 const quizHeaderText = "quiz-header-text"
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    $('#umaName').select2();
+    $('#umaName').select2({
+        placeholder: "",
+        data: ["Maruzensky", "Nice Nature", "Biwa Hayahide"]
+    });
     const mainContentNode = document.getElementById("mainContentNode");
     const startQuizButton = document.getElementById("startQuizButton");
     startQuizButton.addEventListener("click", function() {
