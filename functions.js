@@ -31,6 +31,8 @@ const fontNormalClass = "font-normal"
 const quizQuestionNumberClass = "quiz-question-number"
 const quizHeaderTextClass = "quiz-header-text"
 const buttonClass = "start-button"
+const bottomBarClass = "bottom-bar"
+const backgroundClass = "background-center"
 
 const audioDir = "data/audio/"
 const characterImageDir = "data/images/characters/"
@@ -87,6 +89,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         mainContentNode.innerHTML = ""
         mainContentNode.appendChild(questionNode)
+
+        const backgroundCenter = document.getElementById("backgroundCenter")
+        backgroundCenter.className = backgroundClass + "-question"
+        const bottomBar = document.getElementById("bottomBar")
+        bottomBar.className = bottomBar + "-question"
 
         $('#umaName').select2({
             placeholder: '⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀',
