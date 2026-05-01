@@ -81,6 +81,12 @@ audio {
     align-self: center;
 }
 
+.quiz-submit-button {
+    grid-column: span 2;
+    grid-row: 5;
+    align-self: center;
+}
+
 .text-block {
     margin: 0.5rem;
     display: inherit;
