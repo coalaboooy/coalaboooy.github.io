@@ -55,5 +55,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
             width: 'max-content',
             dropdownAutoWidth: true
         });
+
+        $('#umaName').on('select2:select', function (e) {
+            var data = e.params.data;
+            console.log(data);
+        });
     });
 });
