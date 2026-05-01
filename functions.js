@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const backgroundCenter = document.getElementById("backgroundCenter")
         backgroundCenter.className = backgroundClass + "-question"
         const bottomBar = document.getElementById("bottomBar")
-        bottomBar.className = bottomBar + "-question"
+        bottomBar.className = bottomBarClass + "-question"
 
         $('#umaName').select2({
             placeholder: '⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀',
