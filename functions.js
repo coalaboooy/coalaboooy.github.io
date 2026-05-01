@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         audioPlayer.controls = true
         audioBox.appendChild(audioPlayer)
         var audioSource = document.createElement("source");
-        audioSource.src="Sutekimeppou end note.mp3"
+        audioSource.src="data/audio/Sutekimeppou end note.mp3"
         audioPlayer.appendChild(audioSource)
         
 
