@@ -1,7 +1,7 @@
-var audio = null
+var audioArr = null
 fetch("data/json/audio.json")
 .then(res => res.json())
-.then(data => audio = data)
+.then(data => audioArr = data)
 
 var characters = null
 fetch("data/json/characters.json")
@@ -23,7 +23,7 @@ function shuffleArray(array) {
     }
 }
 
-shuffleArray(audio);
+shuffleArray(audioArr);
 
 const textBlockClass = "text-block"
 const fontBigClass = "font-big"
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         audioPlayer.controls = true
         audioBox.appendChild(audioPlayer)
         const audioSource = document.createElement("source");
-        audioSource.src = 
+        audioSource.src = audioDir + audioArr[0].audio
         audioPlayer.appendChild(audioSource)
         const imageBox = document.createElement("div")
         imageBox.className = textBlockClass + " quiz-image-box"
