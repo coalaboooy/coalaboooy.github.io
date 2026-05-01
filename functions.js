@@ -1,4 +1,6 @@
-const fs = require('fs')
+fetch("data/json/characters.json")
+.then(res => res.json())
+.then(data => console.log(data))
 
 function getImageByCharacterName(arr, name) {
   return arr.find(character => {
