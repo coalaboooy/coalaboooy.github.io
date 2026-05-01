@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 function getImageByCharacterName(arr, name) {
   return arr.find(character => {
     return character.name === name;
