@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Maruzensky",
+        "image": "animation_derby_06.png",
+        "audio": "禁断Burning Heart.mp3",
+        "link": "https://www.youtube.com/watch?v=8vJmpPZJet0"
+    },
+    {
+        "name": "Biwa Hayahide",
+        "image": "starting_gate_11.png",
+        "audio": "手綱と絆.mp3",
+        "link": "https://www.youtube.com/watch?v=-wrbFUvTycI"
+    },
+    {
+        "name": "Nice Nature",
+        "image": "starting_gate_12.png",
+        "audio": "アウト・オブ・トライアングル.mp3",
+        "link": "https://www.youtube.com/watch?v=STSBraMf284"
+    }
+]

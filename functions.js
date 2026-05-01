@@ -1,7 +1,14 @@
+var audio = null
+fetch("data/json/audio.json")
+.then(res => res.json())
+.then(data => audio = data)
+
 var characters = null
 fetch("data/json/characters.json")
 .then(res => res.json())
 .then(data => characters = data)
+
+var characterNames = [""].concat(characters.map(a => a.name)).sort();
 
 function getImageByCharacterName(arr, name) {
   return arr.find(character => {
@@ -9,6 +16,14 @@ function getImageByCharacterName(arr, name) {
   })?.image || 'no_photo.png';
 }
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+shuffleArray(audio);
 
 const textBlockClass = "text-block"
 const fontBigClass = "font-big"
@@ -53,7 +68,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         audioPlayer.controls = true
         audioBox.appendChild(audioPlayer)
         const audioSource = document.createElement("source");
-        audioSource.src="data/audio/Sutekimeppou end note.mp3"
+        audioSource.src = 
         audioPlayer.appendChild(audioSource)
         const imageBox = document.createElement("div")
         imageBox.className = textBlockClass + " quiz-image-box"
@@ -65,7 +80,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         $('#umaName').select2({
             placeholder: '⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀',
-            data: ["", "Maruzensky", "Nice Nature", "Biwa Hayahide"],
+            data: characterNames,
             width: 'max-content',
             dropdownAutoWidth: true
         });
