@@ -55,6 +55,11 @@ body {
     text-align: center;
 }
 
+.quiz-name-selector {
+    grid-column: 2;
+    grid-row: 3;
+}
+
 .text-block {
     margin: 0.5rem;
     display: inherit;
@@ -62,11 +67,6 @@ body {
     align-items: inherit;
     height: fit-content;
     flex-direction: column;
-}
-
-.select-box {
-    min-width: 100px;
-    width: 10rem;
 }
 
 .bottom-bar {
