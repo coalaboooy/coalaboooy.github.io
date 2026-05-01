@@ -6,7 +6,7 @@ const quizHeaderText = "quiz-header-text"
 
 document.addEventListener("DOMContentLoaded", (event) => {
     $('#umaName').select2({
-        placeholder: '',
+        placeholder: ' ',
         data: ["Maruzensky", "Nice Nature", "Biwa Hayahide"],
         width: 'fit-content',
         dropdownAutoWidth: true
