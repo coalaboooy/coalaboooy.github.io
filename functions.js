@@ -1,4 +1,5 @@
 var audioArr = null
+var audioNum = 0 //TODO: вставить количество вручную
 fetch("data/json/audio.json")
 .then(res => res.json())
 .then(data => audioArr = data)
@@ -22,6 +23,7 @@ function shuffleArray(array) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
+    audioNum = array.length
 }
 
 
@@ -38,7 +40,6 @@ const audioDir = "data/audio/"
 const characterImageDir = "data/images/characters/"
 const albumCoverImageDir = "data/images/album_covers/"
 
-const audioNum = audioArr.length
 var count = 1
 
 document.addEventListener("DOMContentLoaded", (event) => {
