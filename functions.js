@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             var name = e.params.data.text;
             imageBox.innerHTML = ""
             const img = new Image(256, 256);
-            img.src = "characterImageDir" + getImageByCharacterName(characters, name)
+            img.src = characterImageDir + getImageByCharacterName(characters, name)
             imageBox.appendChild(img)
         });
     });
