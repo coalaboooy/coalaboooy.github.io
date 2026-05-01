@@ -94,8 +94,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         submitButton.addEventListener("click", function() {
             var audioName = audioArr[count-1].name
-            var answer = $('#umaName').select2('data');
-            console.log(answer)
+            var answer = $('#umaName').select2('data')[0];
             const answerName = answer.text
             console.log(audioName)
             console.log(answerName)
