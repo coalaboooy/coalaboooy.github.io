@@ -2,13 +2,14 @@ var audioArr = null
 fetch("data/json/audio.json")
 .then(res => res.json())
 .then(data => audioArr = data)
+.then(shuffleArray(audioArr))
 
 var characters = null
+var characterNames = null
 fetch("data/json/characters.json")
 .then(res => res.json())
 .then(data => characters = data)
-
-var characterNames = [""].concat(characters.map(a => a.name)).sort();
+.then(characterNames = [""].concat(characters.map(a => a.name)).sort())
 
 function getImageByCharacterName(arr, name) {
   return arr.find(character => {
@@ -21,9 +22,9 @@ function shuffleArray(array) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
+    console.log("shuffled")
 }
 
-shuffleArray(audioArr);
 
 const textBlockClass = "text-block"
 const fontBigClass = "font-big"
