@@ -2,11 +2,15 @@ var audioArr = null
 fetch("data/json/audio.json")
 .then(res => res.json())
 .then(data => audioArr = data)
+.then(() => shuffleArray(audioArr))
 
 var characters = null
+var characterNames = null
 fetch("data/json/characters.json")
 .then(res => res.json())
 .then(data => characters = data)
+.then(() => characterNames = [""].concat(characters.map(a => a.name)).sort())
+.then(c => console.log(c))
 
 function getImageByCharacterName(arr, name) {
   return arr.find(character => {
@@ -36,8 +40,6 @@ const albumCoverImageDir = "data/images/album_covers/"
 document.addEventListener("DOMContentLoaded", (event) => {
     const mainContentNode = document.getElementById("mainContentNode");
     const startQuizButton = document.getElementById("startQuizButton");
-    const characterNames = [""].concat(characters.map(a => a.name)).sort()
-    shuffleArray(audioArr)
         
     startQuizButton.addEventListener("click", function() {
         const questionNode = document.createElement("div")
