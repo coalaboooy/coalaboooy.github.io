@@ -1,5 +1,5 @@
 var audioArr = null
-var audioNum = 0 //TODO: вставить количество вручную
+var audioNum = 3 //TODO: вставить количество вручную
 fetch("data/json/audio.json")
 .then(res => res.json())
 .then(data => audioArr = data)
@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         submitButton.addEventListener("click", function() {
             var audioName = audioArr[count-1].name
             var answer = $('#umaName').select2('data');
+            console.log(answer)
             const answerName = answer.text
             console.log(audioName)
             console.log(answerName)
