@@ -168,5 +168,6 @@ audio {
 .start-button:disabled {
     background-color: #B2A15B;
     border-color: #894072;
+    color: gray;
     pointer-events: none;
 }

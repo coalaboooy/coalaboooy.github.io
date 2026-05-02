@@ -47,8 +47,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const startQuizButton = document.getElementById("startQuizButton")
     const umaNumP = document.getElementById("umaNum")
     umaNumP.textContent = `There are currently ${audioNum} umamusume characters featured`
+    
+    var submitButtonFunc = function submitFunc() {
+        var audioName = audioArr[count-1].name
+        var answer = $('#umaName').select2('data')[0];
+        const answerName = answer.text
+        if (audioName === answerName) {
+            alert("You are right!")
+        }
+        else {
+            alert("You are wrong!")
+        }
+
         
-    startQuizButton.addEventListener("click", function() {
+    };
+
+    var startButtonFunc = function startFunc() {
         const questionNode = document.createElement("div")
         questionNode.className = "quiz-content"
         const questionCounterText = document.createElement("p")
@@ -93,17 +107,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         submitButton.className = buttonClass
         submitButton.textContent = "Submit"
 
-        submitButton.addEventListener("click", function() {
-            var audioName = audioArr[count-1].name
-            var answer = $('#umaName').select2('data')[0];
-            const answerName = answer.text
-            if (audioName === answerName) {
-                alert("You are right!")
-            }
-            else {
-                alert("You are wrong!")
-            }
-        });
+        submitButton.addEventListener("click", submitFunc);
 
         buttonBox.appendChild(submitButton)
 
@@ -130,5 +134,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             imageBox.appendChild(img)
             submitButton.disabled = false
         });
-    });
+    };
+
+    startQuizButton.addEventListener("click", startFunc);
 });
