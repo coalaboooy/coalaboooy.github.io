@@ -135,6 +135,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
             submitButton.disabled = false
         });
     };
-
     startQuizButton.addEventListener("click", startFunc);
 });
