@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         submitButton.className = buttonClass
         submitButton.textContent = "Submit"
 
-        submitButton.addEventListener("click", submitFunc);
+        submitButton.addEventListener("click", submitButtonFunc);
 
         buttonBox.appendChild(submitButton)
 
@@ -135,5 +135,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
             submitButton.disabled = false
         });
     };
-    startQuizButton.addEventListener("click", startFunc);
+    startQuizButton.addEventListener("click", startButtonFunc);
 });
