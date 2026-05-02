@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         buttonBox.className = textBlockClass + " quiz-submit-button"
         questionNode.appendChild(buttonBox)
         const submitButton = document.createElement("button")
+        submitButton.disabled = true
         submitButton.id = "submitQuizAnswer"
         submitButton.className = buttonClass
         submitButton.textContent = "Submit"
@@ -127,6 +128,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             const img = new Image(256, 256)
             img.src = characterImageDir + getImageByCharacterName(characters, name)
             imageBox.appendChild(img)
+            submitButton.disabled = false
         });
     });
 });
