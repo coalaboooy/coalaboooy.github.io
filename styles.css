@@ -164,3 +164,9 @@ audio {
     border: inset;
     border-color: #E545B2;
 }
+
+.start-button:disabled {
+    background-color: #B2A15B;
+    border-color: #894072;
+    pointer-events: none;
+}
