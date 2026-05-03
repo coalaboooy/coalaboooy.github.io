@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         var answer = $('#umaName').select2('data')[0];
         const answerName = answer.text
 
-
         const answerNode = document.createElement("div")
         answerNode.className = "answer-content"
         const answerText = document.createElement("p")
@@ -72,14 +71,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         answerText.textContent = answerTextContent
         answerText.className = textBlockClass + " " + fontBigClass + " " + quizQuestionNumberClass + answerClassName
         answerNode.appendChild(answerText)
-
-        const answerSongLinkBox = document.createElement("p")
-        answerSongLinkBox.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
-        answerNode.appendChild(answerSongLinkBox)
+        // const answerSongLinkBox = document.createElement("p")
+        // answerSongLinkBox.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
+        // answerNode.appendChild(answerSongLinkBox)
         const answerSongLink = document.createElement("a")
+        answerSongLink.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
         answerSongLink.href = audioLink
         answerSongLink.textContent = songName
-        answerSongLinkBox.appendChild(answerSongLink)
+        answerNode.appendChild(answerSongLink)
         const answerUmaName = document.createElement("p")
         answerUmaName.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
         answerUmaName.textContent = answerName
@@ -88,15 +87,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         albumImageBox.className = textBlockClass + " answer-image-box"
         answerNode.appendChild(albumImageBox)
         const albumImage = new Image(256, 256)
-        albumImage.src = albumCoverImageDir + getImageByCharacterName(audioArr, name)
+        albumImage.src = albumCoverImageDir + getImageByCharacterName(audioArr, audioName)
         albumImageBox.appendChild(albumImage)
         const umaImageBox = document.createElement("div")
         umaImageBox.className = textBlockClass + " answer-image-box"
         answerNode.appendChild(umaImageBox)
         const umaImage = new Image(256, 256)
-        umaImage.src = characterImageDir + getImageByCharacterName(characters, name)
-        albumImageBox.appendChild(umaImage)
-
+        umaImage.src = characterImageDir + getImageByCharacterName(characters, audioName)
+        umaImageBox.appendChild(umaImage)
         const buttonBox = document.createElement("div")
         buttonBox.className = textBlockClass + " answer-submit-button"
         answerNode.appendChild(buttonBox)
