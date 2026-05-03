@@ -101,6 +101,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         nextButton.id = "nextQuestion"
         nextButton.className = buttonClass
         nextButton.textContent = "Next question"
+
+        nextButton.addEventListener("click", startButtonFunc);
+
         buttonBox.appendChild(nextButton)
 
         mainContentNode.innerHTML = ""
