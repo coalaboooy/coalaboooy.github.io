@@ -107,9 +107,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         mainContentNode.appendChild(answerNode)
 
         const backgroundCenter = document.getElementById("backgroundCenter")
-        backgroundCenter.className = backgroundClass
+        backgroundCenter.className = backgroundClass + "-main"
         const bottomBar = document.getElementById("bottomBar")
-        bottomBar.className = bottomBarClass
+        bottomBar.className = bottomBarClass + "-main"
     };
 
     var startButtonFunc = function startFunc() {
