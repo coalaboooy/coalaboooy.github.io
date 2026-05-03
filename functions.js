@@ -59,13 +59,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const answerNode = document.createElement("div")
         answerNode.className = "answer-content"
         const answerText = document.createElement("p")
+        var answerTextContent = "Oops! Something went wrong!"
+        var answerClassName = ""
         if (audioName === answerName) {
-            const answerTextContent = "You are correct!"
-            const answerClassName = " answer-text-correct"
+            answerTextContent = "You are correct!"
+            answerClassName = " answer-text-correct"
         }
         else {
-            const answerTextContent = "You are wrong!\nActual answer is"
-            const answerClassName = " answer-text-wrong"
+            answerTextContent = "You are wrong!\nActual answer is"
+            answerClassName = " answer-text-wrong"
         }
         answerText.textContent = answerTextContent
         answerText.className = textBlockClass + " " + fontBigClass + " " + quizQuestionNumberClass + answerClassName
