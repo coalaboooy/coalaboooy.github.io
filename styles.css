@@ -103,6 +103,7 @@ audio {
     grid-template-rows: 1fr 1fr 256px 1fr;
     width: 70vw;
     justify-items: center;
+    align-items: center;
 }
 
 .answer-text-correct {

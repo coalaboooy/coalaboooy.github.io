@@ -71,17 +71,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
         answerText.textContent = answerTextContent
         answerText.className = textBlockClass + " " + fontBigClass + " " + quizQuestionNumberClass + answerClassName
         answerNode.appendChild(answerText)
-        // const answerSongLinkBox = document.createElement("p")
-        // answerSongLinkBox.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
-        // answerNode.appendChild(answerSongLinkBox)
         const answerSongLink = document.createElement("a")
         answerSongLink.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
+        answerSongLink.target = "_blank"
+        answerSongLink.rel = "noopener noreferrer"
         answerSongLink.href = audioLink
-        answerSongLink.textContent = songName
+        answerSongLink.textContent = songName.slice(0, -4)
         answerNode.appendChild(answerSongLink)
         const answerUmaName = document.createElement("p")
         answerUmaName.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
-        answerUmaName.textContent = answerName
+        answerUmaName.textContent = audioName
         answerNode.appendChild(answerUmaName)
         const albumImageBox = document.createElement("div")
         albumImageBox.className = textBlockClass + " answer-image-box"
@@ -106,6 +105,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         mainContentNode.innerHTML = ""
         mainContentNode.appendChild(answerNode)
+
+        const backgroundCenter = document.getElementById("backgroundCenter")
+        backgroundCenter.className = backgroundClass
+        const bottomBar = document.getElementById("bottomBar")
+        bottomBar.className = bottomBarClass
     };
 
     var startButtonFunc = function startFunc() {
