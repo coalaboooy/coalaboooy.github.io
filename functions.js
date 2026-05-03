@@ -49,17 +49,63 @@ document.addEventListener("DOMContentLoaded", (event) => {
     umaNumP.textContent = `There are currently ${audioNum} umamusume characters featured`
     
     var submitButtonFunc = function submitFunc() {
+        var songName = audioArr[count-1].audio
+        var audioLink = audioArr[count-1].link
         var audioName = audioArr[count-1].name
         var answer = $('#umaName').select2('data')[0];
         const answerName = answer.text
+
+
+        const answerNode = document.createElement("div")
+        answerNode.className = "answer-content"
+        const answerText = document.createElement("p")
         if (audioName === answerName) {
-            alert("You are right!")
+            const answerTextContent = "You are correct!"
+            const answerClassName = " answer-text-correct"
         }
         else {
-            alert("You are wrong!")
+            const answerTextContent = "You are wrong!\nActual answer is"
+            const answerClassName = " answer-text-wrong"
         }
+        answerText.textContent = answerTextContent
+        answerText.className = textBlockClass + " " + fontBigClass + " " + quizQuestionNumberClass + answerClassName
+        answerNode.appendChild(answerText)
 
-        
+        const answerSongLinkBox = document.createElement("p")
+        answerSongLinkBox.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
+        answerNode.appendChild(answerSongLinkBox)
+        const answerSongLink = document.createElement("a")
+        answerSongLink.href = audioLink
+        answerSongLink.textContent = songName
+        answerSongLinkBox.appendChild(answerSongLink)
+        const answerUmaName = document.createElement("p")
+        answerUmaName.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
+        answerUmaName.textContent = answerName
+        answerNode.appendChild(answerUmaName)
+        const albumImageBox = document.createElement("div")
+        albumImageBox.className = textBlockClass + " answer-image-box"
+        answerNode.appendChild(albumImageBox)
+        const albumImage = new Image(256, 256)
+        albumImage.src = albumCoverImageDir + getImageByCharacterName(audioArr, name)
+        albumImageBox.appendChild(albumImage)
+        const umaImageBox = document.createElement("div")
+        umaImageBox.className = textBlockClass + " answer-image-box"
+        answerNode.appendChild(umaImageBox)
+        const umaImage = new Image(256, 256)
+        umaImage.src = characterImageDir + getImageByCharacterName(characters, name)
+        albumImageBox.appendChild(umaImage)
+
+        const buttonBox = document.createElement("div")
+        buttonBox.className = textBlockClass + " answer-submit-button"
+        answerNode.appendChild(buttonBox)
+        const nextButton = document.createElement("button")
+        nextButton.id = "nextQuestion"
+        nextButton.className = buttonClass
+        nextButton.textContent = "Next question"
+        buttonBox.appendChild(nextButton)
+
+        mainContentNode.innerHTML = ""
+        mainContentNode.appendChild(answerNode)
     };
 
     var startButtonFunc = function startFunc() {
@@ -135,5 +181,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
             submitButton.disabled = false
         });
     };
+    
     startQuizButton.addEventListener("click", startButtonFunc);
 });

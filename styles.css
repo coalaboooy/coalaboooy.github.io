@@ -96,6 +96,36 @@ audio {
     align-self: center;
 }
 
+.answer-content  {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 256px 1fr;
+    width: 70vw;
+    justify-items: center;
+}
+
+.answer-text-correct {
+    color:rgb(0, 198, 26)
+}
+
+.answer-text-wrong {
+    color:rgb(220, 0, 0)
+}
+
+.answer-image-box {
+    grid-row: 3;
+    width: 256px;
+    height: 256px;
+    align-self: center;
+}
+
+.answer-submit-button {
+    grid-column: span 2;
+    grid-row: 4;
+    align-self: center;
+}
+
 .text-block {
     margin: 0.5rem;
     display: inherit;
