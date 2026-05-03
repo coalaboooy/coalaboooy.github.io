@@ -35,6 +35,8 @@ const quizHeaderTextClass = "quiz-header-text"
 const buttonClass = "start-button"
 const bottomBarClass = "bottom-bar"
 const backgroundClass = "background-center"
+const correctAnswerClass = "answer-text-correct"
+const wrongAnswerClass = "answer-text-wrong"
 
 const audioDir = "data/audio/"
 const characterImageDir = "data/images/characters/"
@@ -57,15 +59,57 @@ document.addEventListener("DOMContentLoaded", (event) => {
         resultsNode.className = "main-content"
         const resultsText = document.createElement("p")
         resultsText.className = textBlockClass + " " + fontBigClass
-        resultsText.textContent = `You answered ${correctAnswerNum} questions correct out of ${audioNum} (${percentage}%)`
+        resultsText.textContent = `You answered ${correctAnswerNum} questions out of ${audioNum} correctly (${percentage}%)`
         resultsNode.appendChild(resultsText)
+
+        const resultsTable = document.createElement("table")
+        const tableHead = resultsTable.createTHead()
+        const headRow = tableHead.insertRow()
+        const headSongCell = row.insertCell()
+        const headSongText = document.createElement("p")
+        headSongText.textContent = "Song"
+        headSongCell.appendChild(headSongText)
+        const headUmaCell = row.insertCell()
+        const headUmaText = document.createElement("p")
+        headUmaText.textContent = "Umamusume"
+        headUmaCell.appendChild(headUmaText)
+        const headAnswerCell = row.insertCell()
+        const headAnswerText = document.createElement("p")
+        headAnswerText.textContent = "Your answer"
+        headAnswerCell.appendChild(headAnswerText)
+
+        for (const answer of recordedAnswers) {
+            const row = resultsTable.insertRow()
+            const songCell = row.insertCell()
+            const songLink = document.createElement("a")
+            songLink.target = "_blank"
+            songLink.rel = "noopener noreferrer"
+            songLink.href = answer.songLink
+            songLink.textContent = answer.songName
+            songCell.appendChild(songLink)
+            const umaCell = row.insertCell()
+            const umaText = document.createElement("p")
+            umaText.textContent = answer.actualAnswer
+            umaCell.appendChild(umaText)
+            const answerCell = row.insertCell()
+            const answerText = document.createElement("p")
+            answerText.textContent = answer.recordedAnswer
+            if (answer.correct) {
+                answerText.className = correctAnswerClass
+            }
+            else {
+                answerText.className = wrongAnswerClass
+            }
+            answerCell.appendChild(answerText)
+        }
+        resultsNode.appendChild(resultsTable)
 
         mainContentNode.innerHTML = ""
         mainContentNode.appendChild(resultsNode)
     };
 
     var submitButtonFunc = function submitFunc() {
-        var songName = audioArr[count-1].audio
+        var songName = audioArr[count-1].audio.slice(0, -4)
         var audioLink = audioArr[count-1].link
         var audioName = audioArr[count-1].name
         var answer = $('#umaName').select2('data')[0];
@@ -79,14 +123,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
         var answerClassName = ""
         if (correctAnswer) {
             answerTextContent = "You are correct!"
-            answerClassName = " answer-text-correct"
+            answerClassName = " " + correctAnswerClass
         }
         else {
             answerTextContent = "You are wrong!\nActual answer is"
-            answerClassName = " answer-text-wrong"
+            answerClassName = " " + wrongAnswerClass
         }
         recordedAnswers.push({
             correct: correctAnswer,
+            songLink: audioLink,
+            songName: songName,
             recordedAnswer: answerName,
             actualAnswer: audioName
         })
@@ -98,7 +144,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         answerSongLink.target = "_blank"
         answerSongLink.rel = "noopener noreferrer"
         answerSongLink.href = audioLink
-        answerSongLink.textContent = songName.slice(0, -4)
+        answerSongLink.textContent = songName
         answerNode.appendChild(answerSongLink)
         const answerUmaName = document.createElement("p")
         answerUmaName.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
