@@ -59,6 +59,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         resultsText.className = textBlockClass + " " + fontBigClass
         resultsText.textContent = `You answered ${correctAnswerNum} questions correct out of ${audioNum} (${percentage}%)`
         resultsNode.appendChild(resultsText)
+
+        mainContentNode.innerHTML = ""
+        mainContentNode.appendChild(resultsNode)
     };
 
     var submitButtonFunc = function submitFunc() {
