@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         nextButton.className = buttonClass
         nextButton.textContent = "Next question"
 
+        count = count + 1
         nextButton.addEventListener("click", startButtonFunc);
 
         buttonBox.appendChild(nextButton)
