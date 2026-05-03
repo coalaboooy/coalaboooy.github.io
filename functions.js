@@ -65,15 +65,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const resultsTable = document.createElement("table")
         const tableHead = resultsTable.createTHead()
         const headRow = tableHead.insertRow()
-        const headSongCell = row.insertCell()
+        const headSongCell = headRow.insertCell()
         const headSongText = document.createElement("p")
         headSongText.textContent = "Song"
         headSongCell.appendChild(headSongText)
-        const headUmaCell = row.insertCell()
+        const headUmaCell = headRow.insertCell()
         const headUmaText = document.createElement("p")
         headUmaText.textContent = "Umamusume"
         headUmaCell.appendChild(headUmaText)
-        const headAnswerCell = row.insertCell()
+        const headAnswerCell = headRow.insertCell()
         const headAnswerText = document.createElement("p")
         headAnswerText.textContent = "Your answer"
         headAnswerCell.appendChild(headAnswerText)
