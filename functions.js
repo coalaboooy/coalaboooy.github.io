@@ -41,26 +41,40 @@ const characterImageDir = "data/images/characters/"
 const albumCoverImageDir = "data/images/album_covers/"
 
 var count = 1
+var recordedAnswers = []
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const mainContentNode = document.getElementById("mainContentNode")
     const startQuizButton = document.getElementById("startQuizButton")
     const umaNumP = document.getElementById("umaNum")
     umaNumP.textContent = `There are currently ${audioNum} umamusume characters featured`
-    
+
+    var resultButtonFunc = function resultFunc() {
+        const correctAnswerNum = recordedAnswers.filter((c) => c.correct == true).length;
+        const percentage = (correctAnswerNum/audioNum*100).toFixed(2)
+
+        const resultsNode = document.createElement("div")
+        resultsNode.className = "main-content"
+        const resultsText = document.createElement("p")
+        resultsText.className = textBlockClass + " " + fontBigClass
+        resultsText.textContent = `You answered ${correctAnswerNum} questions correct out of ${audioNum} (${percentage}%)`
+        resultsNode.appendChild(resultsText)
+    };
+
     var submitButtonFunc = function submitFunc() {
         var songName = audioArr[count-1].audio
         var audioLink = audioArr[count-1].link
         var audioName = audioArr[count-1].name
         var answer = $('#umaName').select2('data')[0];
         const answerName = answer.text
+        const correctAnswer = audioName === answerName
 
         const answerNode = document.createElement("div")
         answerNode.className = "answer-content"
         const answerText = document.createElement("p")
         var answerTextContent = "Oops! Something went wrong!"
         var answerClassName = ""
-        if (audioName === answerName) {
+        if (correctAnswer) {
             answerTextContent = "You are correct!"
             answerClassName = " answer-text-correct"
         }
@@ -68,6 +82,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
             answerTextContent = "You are wrong!\nActual answer is"
             answerClassName = " answer-text-wrong"
         }
+        recordedAnswers.push({
+            correct: correctAnswer,
+            recordedAnswer: answerName,
+            actualAnswer: audioName
+        })
         answerText.textContent = answerTextContent
         answerText.className = textBlockClass + " " + fontBigClass + " " + quizQuestionNumberClass + answerClassName
         answerNode.appendChild(answerText)
@@ -100,12 +119,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const nextButton = document.createElement("button")
         nextButton.id = "nextQuestion"
         nextButton.className = buttonClass
-        nextButton.textContent = "Next question"
 
         if (count == audioNum) {
-            nextButton.addEventListener("click", () => {alert("The end!")});
+            nextButton.textContent = "See results"
+            nextButton.addEventListener("click", resultButtonFunc);
         }
         else {
+            nextButton.textContent = "Next question"
             count = count + 1
             nextButton.addEventListener("click", startButtonFunc);
         }
