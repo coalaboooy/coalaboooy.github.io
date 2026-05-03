@@ -13,6 +13,10 @@ audio {
     max-height: 3rem;
 }
 
+th, td {
+    padding: 0.6em;
+}
+
 .background-center-main {
     display: inherit;
     justify-content: flex-start;
@@ -125,6 +129,13 @@ audio {
     grid-column: span 2;
     grid-row: 4;
     align-self: center;
+}
+
+.result-table {
+    table-layout: fixed;
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
 }
 
 .text-block {
