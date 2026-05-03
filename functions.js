@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         resultsNode.appendChild(resultsText)
 
         const resultsTable = document.createElement("table")
+        resultsTable.className = "result-table"
         const tableHead = resultsTable.createTHead()
         const headRow = tableHead.insertRow()
         const headSongCell = headRow.insertCell()
