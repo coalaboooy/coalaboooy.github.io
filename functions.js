@@ -1,4 +1,6 @@
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+console.log(navigator.maxTouchPoints)
+
+if (navigator.maxTouchPoints > 1) {
     console.log("tough luck, buddy")
     const body = document.body;
     const nope = document.createElement("p")
