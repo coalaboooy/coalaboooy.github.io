@@ -1,10 +1,18 @@
 function noMobileAllowed(mainContentNode) {
     if (navigator.maxTouchPoints > 1) {
-        const nope = document.createElement("p")
-        nope.textContent = "I ain't optimising this shit for mobile, go to the internet cafe or smth"
-        nope.className = textBlockClass + " " + fontBigClass
         mainContentNode.innerHTML = ""
+        const nope = document.createElement("p")
+        nope.textContent = "I ain't optimising this shit for mobile"
+        nope.className = textBlockClass + " " + fontBigClass
         mainContentNode.appendChild(nope)
+        const maybe = document.createElement("p")
+        maybe.textContent = "Maybe later"
+        maybe.className = textBlockClass + " " + fontNormalClass
+        mainContentNode.appendChild(maybe)
+        const baka = document.createElement("p")
+        baka.textContent = "b-b-baka..."
+        baka.className = textBlockClass + " font-copyright" 
+        mainContentNode.appendChild(baka)
         throw new Error("nuh-uh");
     }
 }
