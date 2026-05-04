@@ -4,7 +4,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     const nope = document.createElement("p")
     nope.textContent = "I ain't optimising this shit for mobile, go to the internet cafe or smth"
     body.appendChild(nope)
-    return;
+    throw new Error("nuh-uh");
 }
 
 var audioArr = null
