@@ -53,18 +53,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     var resultButtonFunc = function resultFunc() {
         const correctAnswerNum = recordedAnswers.filter((c) => c.correct == true).length;
+        const plural = correctAnswerNum == 1 ? "" : "s"
         const percentage = (correctAnswerNum/audioNum*100).toFixed(2)
 
         const resultsNode = document.createElement("div")
         resultsNode.className = "main-content"
         const resultsText = document.createElement("p")
         resultsText.className = textBlockClass + " " + fontBigClass
-        resultsText.textContent = `You answered ${correctAnswerNum} questions out of ${audioNum} correctly (${percentage}%)`
+        resultsText.textContent = `You answered ${correctAnswerNum} question${plural} out of ${audioNum} correctly (${percentage}%)`
         resultsNode.appendChild(resultsText)
 
         const resultsTable = document.createElement("table")
-        resultsTable.className = "result-table"
+        resultsTable.className = "result-table " + fontNormalClass
         const tableHead = resultsTable.createTHead()
+        tableHead.className = fontBigClass
         const headRow = tableHead.insertRow()
         const headSongCell = headRow.insertCell()
         const headSongText = document.createElement("p")
@@ -79,8 +81,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         headAnswerText.textContent = "Your answer"
         headAnswerCell.appendChild(headAnswerText)
 
+        const tableBody = resultsTable.createTBody()
         for (const answer of recordedAnswers) {
-            const row = resultsTable.insertRow()
+            const row = tableBody.insertRow()
             const songCell = row.insertCell()
             const songLink = document.createElement("a")
             songLink.target = "_blank"
