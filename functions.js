@@ -1,13 +1,13 @@
-console.log(navigator.maxTouchPoints)
-
-if (navigator.maxTouchPoints == 0) {
-    console.log("tough luck, buddy")
-    const body = document.body;
-    const nope = document.createElement("p")
-    nope.textContent = "I ain't optimising this shit for mobile, go to the internet cafe or smth"
-    body.innerHTML = ""
-    body.appendChild(nope)
-    throw new Error("nuh-uh");
+function noMobileAllowed() {
+    if (navigator.maxTouchPoints > 1) {
+        console.log("tough luck, buddy")
+        const body = document.body;
+        const nope = document.createElement("p")
+        nope.textContent = "I ain't optimising this shit for mobile, go to the internet cafe or smth"
+        body.innerHTML = ""
+        body.appendChild(nope)
+        throw new Error("nuh-uh");
+    }
 }
 
 var audioArr = null
@@ -58,6 +58,7 @@ var count = 1
 var recordedAnswers = []
 
 document.addEventListener("DOMContentLoaded", (event) => {
+    noMobileAllowed()
     const mainContentNode = document.getElementById("mainContentNode")
     const startQuizButton = document.getElementById("startQuizButton")
     const umaNumP = document.getElementById("umaNum")
