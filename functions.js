@@ -1,6 +1,6 @@
 console.log(navigator.maxTouchPoints)
 
-if (navigator.maxTouchPoints > 1) {
+if (navigator.maxTouchPoints == 0) {
     console.log("tough luck, buddy")
     const body = document.body;
     const nope = document.createElement("p")
