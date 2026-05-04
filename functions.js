@@ -1,3 +1,12 @@
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    console.log("tough luck, buddy")
+    const body = document.body;
+    const nope = document.createElement("p")
+    nope.textContent = "I ain't optimising this shit for mobile, go to the internet cafe or smth"
+    body.appendChild(nope)
+    return;
+}
+
 var audioArr = null
 var audioNum = 3 //TODO: вставить количество вручную
 fetch("data/json/audio.json")

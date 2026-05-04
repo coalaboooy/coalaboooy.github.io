@@ -13,10 +13,10 @@ audio {
     max-height: 3rem;
 }
 
-th, td {
+td {
     padding: 0.6em;
     border-collapse: collapse;
-    border: 1px solid gray;
+    border: 2px solid gray;
 }
 
 .background-center-main {
@@ -113,11 +113,13 @@ th, td {
 }
 
 .answer-text-correct {
-    color:rgb(0, 198, 26)
+    color:rgb(0, 198, 26);
+    text-shadow: 0px 0px 1px rgb(0, 198, 26);
 }
 
 .answer-text-wrong {
-    color:rgb(220, 0, 0)
+    color:rgb(220, 0, 0);
+    text-shadow: 0px 0px 1px rgb(220, 0, 0);
 }
 
 .answer-image-box {
@@ -139,7 +141,6 @@ th, td {
     margin: 10px auto;
     border-collapse: collapse;
     text-align: center;
-    border: 1px solid gray;
 }
 
 .text-block {
