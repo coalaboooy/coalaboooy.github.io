@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const audioPlayer = document.createElement("audio")
         audioPlayer.id = "songPlayer"
         audioPlayer.controls = true
-        audioPlayer.volume = 0.5
+        audioPlayer.volume = 0.3
         audioBox.appendChild(audioPlayer)
         const audioSource = document.createElement("source")
         audioSource.src = audioDir + audioArr[count-1].audio
