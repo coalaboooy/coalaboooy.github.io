@@ -70,10 +70,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const startQuizButton = document.getElementById("startQuizButton")
     const umaNumP = document.getElementById("umaNum")
     umaNumP.textContent = `There are currently ${audioNum} umamusume characters featured, with each one having one song`
-    ///////////////////////
-    console.log(audioNum)
-    console.log(characters.length)
-    ///////////////////////
+
     var resultButtonFunc = function resultFunc() {
         const correctAnswerNum = recordedAnswers.filter((c) => c.correct == true).length;
         const plural = correctAnswerNum == 1 ? "" : "s"
@@ -218,6 +215,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     };
 
     var startButtonFunc = function startFunc() {
+        ///////////////////////
+        console.log(audioNum)
+        console.log(characters.length)
+        ///////////////////////
         const questionNode = document.createElement("div")
         questionNode.className = "quiz-content"
         const questionCounterText = document.createElement("p")
