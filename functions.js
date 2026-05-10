@@ -128,6 +128,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
         resultsNode.appendChild(resultsTable)
 
+        const backgroundCenter = document.getElementById("backgroundCenter")
+        backgroundCenter.className = backgroundClass + "-question"
+        const bottomBar = document.getElementById("bottomBar")
+        bottomBar.className = bottomBarClass + "-question"
+
         mainContentNode.innerHTML = ""
         mainContentNode.appendChild(resultsNode)
     };
@@ -136,6 +141,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         var songName = audioArr[count-1].audio.slice(0, -4)
         var audioLink = audioArr[count-1].link
         var audioName = audioArr[count-1].name
+        if (audioName == "Curren Chan") {
+            songName = "#"+ songName
+        }
         var answer = $('#umaName').select2('data')[0];
         const answerName = answer.text
         const correctAnswer = audioName === answerName
@@ -215,15 +223,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     };
 
     var startButtonFunc = function startFunc() {
-        ///////////////////////
-        console.log(audioNum)
-        console.log(characters.length)
-        ///////////////////////
         const questionNode = document.createElement("div")
         questionNode.className = "quiz-content"
         const questionCounterText = document.createElement("p")
         questionCounterText.className = textBlockClass + " " + fontBigClass + " " + quizQuestionNumberClass
-        questionCounterText.textContent = `Question ${count}/${audioNum}: ${audioArr[count-1].name}`
+        questionCounterText.textContent = `Question ${count}/${audioNum}`
         questionNode.appendChild(questionCounterText)
         const questionLeftHeader = document.createElement("p")
         questionLeftHeader.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
