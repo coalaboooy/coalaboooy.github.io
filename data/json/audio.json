@@ -16,5 +16,629 @@
         "image": "starting_gate_12.png",
         "audio": "アウト・オブ・トライアングル.mp3",
         "link": "https://www.youtube.com/watch?v=STSBraMf284"
+    },
+    {
+        "name": "Special Week",
+        "image": "starting_gate_01.png",
+        "audio": "わたしの印は大本命◎.mp3",
+        "link": "https://www.youtube.com/watch?v=WkPIsV8YoRY"
+    },
+    {
+        "name": "Silence Suzuka",
+        "image": "animation_derby_05.png",
+        "audio": "Silent Star.mp3",
+        "link": "https://www.youtube.com/watch?v=FuKPzkNr0uY"
+    },
+    {
+        "name": "Tokai Teio",
+        "image": "animation_derby_05.png",
+        "audio": "恋はダービー☆.mp3",
+        "link": "https://www.youtube.com/watch?v=8tamOu8AwFE"
+    },
+    {
+        "name": "Oguri Cap",
+        "image": "animation_derby_07.png",
+        "audio": "unbreakable.mp3",
+        "link": "https://www.youtube.com/watch?v=POY0sE74Jek"
+    },
+    {
+        "name": "Gold Ship",
+        "image": "starting_gate_03.png",
+        "audio": "Goal To My SHIP.mp3",
+        "link": "https://www.youtube.com/watch?v=cQN0Wp3o1I8"
+    },
+    {
+        "name": "Vodka",
+        "image": "starting_gate_03.png",
+        "audio": "CATCH THE VICTORY!.mp3",
+        "link": "https://www.youtube.com/watch?v=5ZpdKQHbbFY"
+    },
+    {
+        "name": "Daiwa Scarlet",
+        "image": "starting_gate_03.png",
+        "audio": "Rising Girl.mp3",
+        "link": "https://www.youtube.com/watch?v=6Gcw1M53q6I"
+    },
+    {
+        "name": "Taiki Shuttle",
+        "image": "starting_gate_04.png",
+        "audio": "直感ノープロブレム！.mp3",
+        "link": "https://www.youtube.com/watch?v=WbpbQ56LWDw"
+    },
+    {
+        "name": "Grass Wonder",
+        "image": "starting_gate_04.png",
+        "audio": "Secret GRADUATION.mp3",
+        "link": "https://www.youtube.com/watch?v=-Zk7pIiY3Dc"
+    },
+    {
+        "name": "Mejiro McQueen",
+        "image": "animation_derby_05.png",
+        "audio": "Waiting for Tomorrow.mp3",
+        "link": "https://www.youtube.com/watch?v=SaTij5yepl4"
+    },
+    {
+        "name": "El Condor Pasa",
+        "image": "animation_derby_07.png",
+        "audio": "L's Surprise!!.mp3",
+        "link": "https://www.youtube.com/watch?v=Ltf10xd4hPY"
+    },
+    {
+        "name": "Symboli Rudolf",
+        "image": "starting_gate_06.png",
+        "audio": "SEVEN.mp3",
+        "link": "https://www.youtube.com/watch?v=G1YXqYXx_b0"
+    },
+    {
+        "name": "Air Groove",
+        "image": "starting_gate_06.png",
+        "audio": "EMPRESS GAME.mp3",
+        "link": "https://www.youtube.com/watch?v=ByeXdS4crd4"
+    },
+    {
+        "name": "Mayano Top Gun",
+        "image": "winning_live_07.png",
+        "audio": "ときめきスクランブル.mp3",
+        "link": "https://www.youtube.com/watch?v=8PkF-MyoE9Q"
+    },
+    {
+        "name": "Mejiro Ryan",
+        "image": "starting_gate_09.png",
+        "audio": "希望ディスカバリー.mp3",
+        "link": "https://www.youtube.com/watch?v=tzrNwUajwf4"
+    },
+    {
+        "name": "Rice Shower",
+        "image": "animation_derby_02.png",
+        "audio": "ささやかな祈り.mp3",
+        "link": "https://www.youtube.com/watch?v=Cs70yKJmUvs"
+    },
+    {
+        "name": "Agnes Tachyon",
+        "image": "winning_live_03.png",
+        "audio": "ライトレス.mp3",
+        "link": "https://www.youtube.com/watch?v=t202gzOzSNA"
+    },
+    {
+        "name": "Winning Ticket",
+        "image": "starting_gate_11.png",
+        "audio": "WINNING MELODY.mp3",
+        "link": "https://www.youtube.com/watch?v=JAabHu5yllk"
+    },
+    {
+        "name": "Sakura Bakushin O",
+        "image": "starting_gate_10.png",
+        "audio": "猪突猛進爆進中!!.mp3",
+        "link": "https://www.youtube.com/watch?v=Zqoi8CjITxs"
+    },
+    {
+        "name": "Super Creek",
+        "image": "starting_gate_07.png",
+        "audio": "ふんわりSlowly.mp3",
+        "link": "https://www.youtube.com/watch?v=artgzFlsuU8"
+    },
+    {
+        "name": "Haru Urara",
+        "image": "starting_gate_07.png",
+        "audio": "今日もウララかケセラセラ！.mp3",
+        "link": "https://www.youtube.com/watch?v=P_-XGKuxWRo"
+    },
+    {
+        "name": "Matikanefukukitaru",
+        "image": "starting_gate_07.png",
+        "audio": "Lucky Comes True!.mp3",
+        "link": "https://www.youtube.com/watch?v=TH_3Ej4tvSs"
+    },
+    {
+        "name": "King Halo",
+        "image": "winning_live_03.png",
+        "audio": "Exercise the Right.mp3",
+        "link": "https://www.youtube.com/watch?v=Q0WO7O_xl4I"
+    },
+    {
+        "name": "TM Opera O",
+        "image": "animation_derby_07.png",
+        "audio": "帝笑歌劇～讃えよ永久に～.mp3",
+        "link": "https://www.youtube.com/watch?v=QzG5BOZy5a8"
+    },
+    {
+        "name": "Mihono Bourbon",
+        "image": "winning_live_26.png",
+        "audio": "Absolute Faith.mp3",
+        "link": "https://www.youtube.com/watch?v=a5PUrdxpZds"
+    },
+    {
+        "name": "Curren Chan",
+        "image": "winning_live_27.png",
+        "audio": "#カワイイって言って ？.mp3",
+        "link": "https://www.youtube.com/watch?v=75YuwF6hBfY"
+    },
+    {
+        "name": "Narita Taishin",
+        "image": "starting_gate_11.png",
+        "audio": "感情ノ黎明.mp3",
+        "link": "https://www.youtube.com/watch?v=ORCz8YU_kLU"
+    },
+    {
+        "name": "Smart Falcon",
+        "image": "winning_live_08.png",
+        "audio": "立ち位置ゼロ番！順位は一番！.mp3",
+        "link": "https://www.youtube.com/watch?v=7rcAOE_Dvbw"
+    },
+    {
+        "name": "Narita Brian",
+        "image": "animation_derby_06.png",
+        "audio": "シャドーロールの誓い.mp3",
+        "link": "https://www.youtube.com/watch?v=9Lt61A1dVFU"
+    },
+    {
+        "name": "Seiun Sky",
+        "image": "animation_derby_07.png",
+        "audio": "気まぐれTuning Heart.mp3",
+        "link": "https://www.youtube.com/watch?v=o4xfLzghezg"
+    },
+    {
+        "name": "Hishi Amazon",
+        "image": "animation_derby_06.png",
+        "audio": "鳥かごのロンリーバード.mp3",
+        "link": "https://www.youtube.com/watch?v=9mwR1-DRmq0"
+    },
+    {
+        "name": "Fuji Kiseki",
+        "image": "animation_derby_06.png",
+        "audio": "DREAM JACK.mp3",
+        "link": "https://www.youtube.com/watch?v=Zda7cCWF220"
+    },
+    {
+        "name": "Gold City",
+        "image": "starting_gate_08.png",
+        "audio": "素顔のココロ.mp3",
+        "link": "https://www.youtube.com/watch?v=_b0HK71WVbc"
+    },
+    {
+        "name": "Meisho Doto",
+        "image": "road_to_the_top.png",
+        "audio": "ゼッタイトナリ…！.mp3",
+        "link": "https://www.youtube.com/watch?v=mpobjYH1kzc"
+    },
+    {
+        "name": "Eishin Flash",
+        "image": "winning_live_20.png",
+        "audio": "誇りをこの手に.mp3",
+        "link": "https://www.youtube.com/watch?v=QvN_43PRaC4"
+    },
+    {
+        "name": "Agnes Digital",
+        "image": "winning_live_28.png",
+        "audio": "仰げば尊Mission!.mp3",
+        "link": "https://www.youtube.com/watch?v=Z6eGoJiuGck"
+    },
+    {
+        "name": "Kawakami Princess",
+        "image": "winning_live_29.png",
+        "audio": "豪快突破☆プリンセス！.mp3",
+        "link": "https://www.youtube.com/watch?v=NNwHqZ5gQgQ"
+    },
+    {
+        "name": "Manhattan Cafe",
+        "image": "starting_gate_12.png",
+        "audio": "楽園.mp3",
+        "link": "https://www.youtube.com/watch?v=hj9PxkNERAY"
+    },
+    {
+        "name": "Tosen Jordan",
+        "image": "winning_live_20.png",
+        "audio": "ゆーてネタだかんね♡.mp3",
+        "link": "https://www.youtube.com/watch?v=VoThZD3n81s"
+    },
+    {
+        "name": "Mejiro Dober",
+        "image": "winning_live_03.png",
+        "audio": "Just a little bit.mp3",
+        "link": "https://www.youtube.com/watch?v=J0dsRDxK8JI"
+    },
+    {
+        "name": "Fine Motion",
+        "image": "starting_gate_09.png",
+        "audio": "恋する世界.mp3",
+        "link": "https://www.youtube.com/watch?v=FSgr-VmC0wM"
+    },
+    {
+        "name": "Tamamo Cross",
+        "image": "starting_gate_10.png",
+        "audio": "My Against Fight.mp3",
+        "link": "https://www.youtube.com/watch?v=N6zAGGUKBwk"
+    },
+    {
+        "name": "Sakura Chiyono O",
+        "image": "winning_live_04.png",
+        "audio": "ひたむきマイノート.mp3",
+        "link": "https://www.youtube.com/watch?v=9Xpnlv7s4Us"
+    },
+    {
+        "name": "Mejiro Ardan",
+        "image": "winning_live_04.png",
+        "audio": "硝子のエトワール.mp3",
+        "link": "https://www.youtube.com/watch?v=iYRmlk7K6JA"
+    },
+    {
+        "name": "Admire Vega",
+        "image": "road_to_the_top.png",
+        "audio": "Like a Shooting Star.mp3",
+        "link": "https://www.youtube.com/watch?v=ay-oFjFORXA"
+    },
+    {
+        "name": "Matikanetannhauser",
+        "image": "winning_live_13.png",
+        "audio": "TAILWIND.mp3",
+        "link": "https://www.youtube.com/watch?v=TqtPjObLZa4"
+    },
+    {
+        "name": "Kitasan Black",
+        "image": "animation_derby_01.png",
+        "audio": "ロストシャイン.mp3",
+        "link": "https://www.youtube.com/watch?v=bFNDMrpNk_Y"
+    },
+    {
+        "name": "Satono Diamond",
+        "image": "animation_derby_03.png",
+        "audio": "夢のこたえ.mp3",
+        "link": "https://www.youtube.com/watch?v=JOz43KYxc58"
+    },
+    {
+        "name": "Yaeno Muteki",
+        "image": "winning_live_04.png",
+        "audio": "武名疾走！.mp3",
+        "link": "https://www.youtube.com/watch?v=vF7KsirrzaM"
+    },
+    {
+        "name": "Inari One",
+        "image": "winning_live_30.png",
+        "audio": "稲荷ノ華.mp3",
+        "link": "https://www.youtube.com/watch?v=Tw42537DqE4"
+    },
+    {
+        "name": "Sweep Tosho",
+        "image": "winning_live_29.png",
+        "audio": "魔法がなくちゃはじまらないでしょ？.mp3",
+        "link": "https://www.youtube.com/watch?v=Xgelu4nyQzQ"
+    },
+    {
+        "name": "Air Shakur",
+        "image": "starting_gate_12.png",
+        "audio": "Air Race.mp3",
+        "link": "https://www.youtube.com/watch?v=W3yaQuFU6Uc"
+    },
+    {
+        "name": "Copano Rickey",
+        "image": "winning_live_09.png",
+        "audio": "ラキハピファンタスティック.mp3",
+        "link": "https://www.youtube.com/watch?v=bszt8e1FmyI"
+    },
+    {
+        "name": "Yukino Bijin",
+        "image": "starting_gate_08.png",
+        "audio": "シティプリンセス!.mp3",
+        "link": "https://www.youtube.com/watch?v=-Bwwaz336U8"
+    },
+    {
+        "name": "Aston Machan",
+        "image": "winning_live_08.png",
+        "audio": "忘却にて.mp3",
+        "link": "https://www.youtube.com/watch?v=gfF9KR4naOI"
+    },
+    {
+        "name": "Seeking the Pearl",
+        "image": "winning_live_31.png",
+        "audio": "Seeking The Pearl ～真珠を探して～.mp3",
+        "link": "https://www.youtube.com/watch?v=pJvhI3bxprQ"
+    },
+    {
+        "name": "Yamanin Zephyr",
+        "image": "winning_live_08.png",
+        "audio": "LIKE THE WIND.mp3",
+        "link": "https://www.youtube.com/watch?v=dZ7ph438jZI"
+    },
+    {
+        "name": "Nakayama Festa",
+        "image": "winning_live_14.png",
+        "audio": "You know me.mp3",
+        "link": "https://www.youtube.com/watch?v=mvE3Z_cPqnY"
+    },
+    {
+        "name": "Wonder Acute",
+        "image": "winning_live_09.png",
+        "audio": "悠々閑々.mp3",
+        "link": "https://www.youtube.com/watch?v=reDNnPwrbd4"
+    },
+    {
+        "name": "Zenno Rob Roy",
+        "image": "winning_live_15.png",
+        "audio": "埋火の英雄.mp3",
+        "link": "https://www.youtube.com/watch?v=8ByBwpILd78"
+    },
+    {
+        "name": "Hokko Tarumae",
+        "image": "winning_live_09.png",
+        "audio": "けっぱれ！輝きストレート.mp3",
+        "link": "https://www.youtube.com/watch?v=Jjg4dES1HAM"
+    },
+    {
+        "name": "Daitaku Helios",
+        "image": "winning_live_08.png",
+        "audio": "笑っちゃお！.mp3",
+        "link": "https://www.youtube.com/watch?v=ZKeNTokpbaw"
+    },
+    {
+        "name": "Mr. C.B.",
+        "image": "winning_live_24.png",
+        "audio": "夢疾風.mp3",
+        "link": "https://www.youtube.com/watch?v=5VJRB9aTFv8"
+    },
+    {
+        "name": "Twin Turbo",
+        "image": "winning_live_13.png",
+        "audio": "▷▷▷▶︎ぶっとび かっとび 全開エンジン！.mp3",
+        "link": "https://www.youtube.com/watch?v=Ax13Fyw5h50"
+    },
+    {
+        "name": "Symboli Kris S",
+        "image": "winning_live_10.png",
+        "audio": "THE SUPER STRONG S.mp3",
+        "link": "https://www.youtube.com/watch?v=KgXRBka1tbA"
+    },
+    {
+        "name": "Sakura Laurel",
+        "image": "winning_live_07.png",
+        "audio": "ユースフルアイズ.mp3",
+        "link": "https://www.youtube.com/watch?v=vqBFjh-fyHY"
+    },
+    {
+        "name": "Neo Universe",
+        "image": "winning_live_15.png",
+        "audio": "銀河系フィロソフィー.mp3",
+        "link": "https://www.youtube.com/watch?v=lMtTKqCTe1E"
+    },
+    {
+        "name": "Hishi Miracle",
+        "image": "winning_live_15.png",
+        "audio": "平凡、時にミラクル.mp3",
+        "link": "https://www.youtube.com/watch?v=N06SW92sX3A"
+    },
+    {
+        "name": "Tanino Gimlet",
+        "image": "winning_live_10.png",
+        "audio": "Destroy for Dasein.mp3",
+        "link": "https://www.youtube.com/watch?v=zX766xs4ywQ"
+    },
+    {
+        "name": "Marvelous Sunday",
+        "image": "winning_live_07.png",
+        "audio": "マーベラスサンデータイム☆★.mp3",
+        "link": "https://www.youtube.com/watch?v=PdKj1065-P4"
+    },
+    {
+        "name": "Katsuragi Ace",
+        "image": "winning_live_30.png",
+        "audio": "エース、すなわち.mp3",
+        "link": "https://www.youtube.com/watch?v=KwpAOX_YkLQ"
+    },
+    {
+        "name": "Sirius Symboli",
+        "image": "winning_live_14.png",
+        "audio": "GALACTIC PLAYER.mp3",
+        "link": "https://www.youtube.com/watch?v=qwdTIJwh750"
+    },
+    {
+        "name": "Narita Top Road",
+        "image": "road_to_the_top.png",
+        "audio": "ONCE MORE, I CAN.mp3",
+        "link": "https://www.youtube.com/watch?v=WjQuOXmHPfY"
+    },
+    {
+        "name": "Mejiro Ramonu",
+        "image": "winning_live_21.png",
+        "audio": "Love Will Come Through.mp3",
+        "link": "https://www.youtube.com/watch?v=MvbFvFYpk_U"
+    },
+    {
+        "name": "Tap Dance City",
+        "image": "winning_live_14.png",
+        "audio": "DANCE！DANCE！''ROMAN''.mp3",
+        "link": "https://www.youtube.com/watch?v=5D6kwFkEMdE"
+    },
+    {
+        "name": "Satono Crown",
+        "image": "winning_live_16.png",
+        "audio": "Confident.mp3",
+        "link": "https://www.youtube.com/watch?v=3Pv8UaZ2JiM"
+    },
+    {
+        "name": "Cheval Grand",
+        "image": "winning_live_16.png",
+        "audio": "僕が憧れた青.mp3",
+        "link": "https://www.youtube.com/watch?v=lulHBx54moE"
+    },
+    {
+        "name": "Vivlos",
+        "image": "winning_live_22.png",
+        "audio": "マリンブルー・マジック♡.mp3",
+        "link": "https://www.youtube.com/watch?v=SQ-Mgy5pI2I"
+    },
+    {
+        "name": "Biko Pegasus",
+        "image": "starting_gate_10.png",
+        "audio": "一撃入魂☆ペガサスパンチ.mp3",
+        "link": "https://www.youtube.com/watch?v=LpXJVsmU74c"
+    },
+    {
+        "name": "Ikuno Dictus",
+        "image": "winning_live_13.png",
+        "audio": "Excellent Condition.mp3",
+        "link": "https://www.youtube.com/watch?v=4Y3YQ85apL0"
+    },
+    {
+        "name": "Duramente",
+        "image": "winning_live_16.png",
+        "audio": "EXCEED.mp3",
+        "link": "https://www.youtube.com/watch?v=H1NRtU1Uf_8"
+    },
+    {
+        "name": "Transcend",
+        "image": "winning_live_23.png",
+        "audio": "ZOKZOK.mp3",
+        "link": "https://www.youtube.com/watch?v=SGJ-mmkDVSU"
+    },
+    {
+        "name": "Rhein Kraft",
+        "image": "winning_live_18.png",
+        "audio": "Over a Tiara.mp3",
+        "link": "https://www.youtube.com/watch?v=Wo8JJ3ydjWI"
+    },
+    {
+        "name": "Jungle Pocket",
+        "image": "winning_live_19.png",
+        "audio": "最強ROARING.mp3",
+        "link": "https://www.youtube.com/watch?v=8T4pUiwJZJI"
+    },
+    {
+        "name": "Dream Journey",
+        "image": "winning_live_24.png",
+        "audio": "Stay on Course.mp3",
+        "link": "https://www.youtube.com/watch?v=ybQ_ObZ9BaA"
+    },
+    {
+        "name": "Gentildonna",
+        "image": "winning_live_21.png",
+        "audio": "LADY G DONNA.mp3",
+        "link": "https://www.youtube.com/watch?v=JF8WNheLQzQ"
+    },
+    {
+        "name": "Cesario",
+        "image": "winning_live_18.png",
+        "audio": "朝露は大河の夢を見る.mp3",
+        "link": "https://www.youtube.com/watch?v=VEQNYXA7D_s"
+    },
+    {
+        "name": "Air Messiah",
+        "image": "winning_live_18.png",
+        "audio": "十帰りの花.mp3",
+        "link": "https://www.youtube.com/watch?v=OqlLa8zcuJ8"
+    },
+    {
+        "name": "Win Variation",
+        "image": "winning_live_22.png",
+        "audio": "どこまで走れば.mp3",
+        "link": "https://www.youtube.com/watch?v=WoH3u-s-Kgk"
+    },
+    {
+        "name": "Furioso",
+        "image": "winning_live_23.png",
+        "audio": "Dear My Dream.mp3",
+        "link": "https://www.youtube.com/watch?v=QSG-tSDjVeI"
+    },
+    {
+        "name": "Tsurumaru Tsuyoshi",
+        "image": "winning_live_10.png",
+        "audio": "Play Again.mp3",
+        "link": "https://www.youtube.com/watch?v=NegFY5seNi4"
+    },
+    {
+        "name": "Orfevre",
+        "image": "winning_live_24.png",
+        "audio": "以下、勅命.mp3",
+        "link": "https://www.youtube.com/watch?v=xY5JtnTte4w"
+    },
+    {
+        "name": "Gran Alegria",
+        "image": "winning_live_27.png",
+        "audio": "Mile×Rule Star.mp3",
+        "link": "https://www.youtube.com/watch?v=qDuRoe_S-6M"
+    },
+    {
+        "name": "Verxina",
+        "image": "winning_live_22.png",
+        "audio": "I Can't Choose to Give Up!.mp3",
+        "link": "https://www.youtube.com/watch?v=rjDF62wuIrM"
+    },
+    {
+        "name": "Loves Only You",
+        "image": "winning_live_33.png",
+        "audio": "【おやすみ配信】みんなとラヴ補充した～い.mp3",
+        "link": "https://www.youtube.com/watch?v=oJhPc86biv0"
+    },
+    {
+        "name": "Chrono Genesis",
+        "image": "winning_live_30.png",
+        "audio": "Logue.mp3",
+        "link": "https://www.youtube.com/watch?v=bdqrHp4HHdk"
+    },
+    {
+        "name": "Still in Love",
+        "image": "winning_live_21.png",
+        "audio": "愛舞い、喰らい。.mp3",
+        "link": "https://www.youtube.com/watch?v=Uv8xoD-E-h0"
+    },
+    {
+        "name": "Espoir City",
+        "image": "winning_live_23.png",
+        "audio": "ピヨっピヨにしてやんよッ！.mp3",
+        "link": "https://www.youtube.com/watch?v=9G1NqajvYtk"
+    },
+    {
+        "name": "Dantsu Flame",
+        "image": "winning_live_19.png",
+        "audio": "私が主役じゃダメですか？.mp3",
+        "link": "https://www.youtube.com/watch?v=0SFFjX37csM"
+    },
+    {
+        "name": "Buena Vista",
+        "image": "winning_live_28.png",
+        "audio": "パラ・シエンプレ.mp3",
+        "link": "https://www.youtube.com/watch?v=axVczhJnQuM"
+    },
+    {
+        "name": "Almond Eye",
+        "image": "winning_live_26.png",
+        "audio": "Glory Eyes.mp3",
+        "link": "https://www.youtube.com/watch?v=qoCnIDpv2TY"
+    },
+    {
+        "name": "Victoire Pisa",
+        "image": "winning_live_31.png",
+        "audio": "希望よ永遠に.mp3",
+        "link": "https://www.youtube.com/watch?v=L7PbiNd1a6U"
+    },
+    {
+        "name": "Daring Heart",
+        "image": "winning_live_18.png",
+        "audio": "QueenBee.mp3",
+        "link": "https://www.youtube.com/watch?v=a4Wr1sj02L4"
+    },
+    {
+        "name": "Marche Lorraine",
+        "image": "winning_live_33.png",
+        "audio": "ちょっとだけの勇気。.mp3",
+        "link": "https://www.youtube.com/watch?v=a4Wr1sj02L4"
     }
 ]

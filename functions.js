@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         bottomBar.className = bottomBarClass + "-question"
 
         $('#umaName').select2({
-            placeholder: '⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀',
+            placeholder: 'Start typing here',
             data: characterNames,
             width: 'max-content',
             dropdownAutoWidth: true
