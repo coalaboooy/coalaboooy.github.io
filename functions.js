@@ -18,7 +18,7 @@ function noMobileAllowed(mainContentNode) {
 }
 
 var audioArr = null
-var audioNum = 3 //TODO: вставить количество вручную
+var audioNum = 107 //TODO: вставить количество вручную
 fetch("data/json/audio.json")
 .then(res => res.json())
 .then(data => audioArr = data)
@@ -69,8 +69,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     noMobileAllowed(mainContentNode)
     const startQuizButton = document.getElementById("startQuizButton")
     const umaNumP = document.getElementById("umaNum")
-    umaNumP.textContent = `There are currently ${audioNum} umamusume characters featured`
-
+    umaNumP.textContent = `There are currently ${audioNum} umamusume characters featured, with each one having one song`
+    ///////////////////////
+    console.log(audioNum)
+    console.log(characters.length)
+    ///////////////////////
     var resultButtonFunc = function resultFunc() {
         const correctAnswerNum = recordedAnswers.filter((c) => c.correct == true).length;
         const plural = correctAnswerNum == 1 ? "" : "s"
@@ -219,7 +222,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         questionNode.className = "quiz-content"
         const questionCounterText = document.createElement("p")
         questionCounterText.className = textBlockClass + " " + fontBigClass + " " + quizQuestionNumberClass
-        questionCounterText.textContent = `Question ${count}/${audioNum}`
+        questionCounterText.textContent = `Question ${count}/${audioNum}: ${audioArr[count-1].name}`
         questionNode.appendChild(questionCounterText)
         const questionLeftHeader = document.createElement("p")
         questionLeftHeader.className = textBlockClass + " " + fontNormalClass + " " + quizHeaderTextClass
@@ -250,6 +253,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const imageBox = document.createElement("div")
         imageBox.className = textBlockClass + " quiz-image-box"
         questionNode.appendChild(imageBox)
+        const img = new Image(256, 256)
+        img.src = characterImageDir + "agnes_loading.gif"
+        imageBox.appendChild(img)
         const buttonBox = document.createElement("div")
         buttonBox.className = textBlockClass + " quiz-submit-button"
         questionNode.appendChild(buttonBox)
